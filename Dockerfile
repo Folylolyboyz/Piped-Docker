@@ -1,5 +1,5 @@
 # Base Image for Piped Backend
-FROM ghcr.io/aleclol/piped:latest
+FROM 1337kavin/piped-frontend:latest
 
 # Set the working directory
 WORKDIR /app
