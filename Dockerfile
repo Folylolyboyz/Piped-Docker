@@ -4,8 +4,8 @@ FROM ghcr.io/aleclol/piped:latest
 # Set the working directory
 WORKDIR /app
 
-# Copy config file if needed (modify as per actual file location)
-COPY config.example.json /app/config.json
+# Ensure the database directory exists
+RUN mkdir -p /app/data
 
 # Expose the required port
 EXPOSE 8080
